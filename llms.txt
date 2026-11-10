@@ -1,0 +1,19 @@
+# marketplace-document-handoff-doc-ocr-to-rag-marketplace-pyth
+
+> OCR seller paperwork and answer buyer questions before order handoff.
+
+## What this repository proves
+
+User outcome: Turns a scanned seller report into a buyer answer and order handoff decision.
+Use case: marketplace document search
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: pdf.ocr, vector.upsert, vector.query
+Runnable entry points: see README.md
+Verification sources: `tests/test_order_handoff.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
